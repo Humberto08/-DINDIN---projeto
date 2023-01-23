@@ -1,0 +1,99 @@
+.container1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 3em 2em;
+    background-color: var(--white);
+}
+
+.titulo {
+    width: 35%;
+}
+
+.principal__titulo {
+    color: var(--green);
+    font-weight: 700;
+    font-size: 47px;
+    padding-bottom: 1em;
+}
+
+.principal__descricao {
+    color: var(--black);
+    font-weight: 300;
+    font-size: 20px;
+    flex-wrap: wrap;
+}
+
+.imagem1 {
+    width: 405px;
+    height: 405px;
+}
+
+.container2 {
+    display: flex;
+    justify-content:space-evenly;
+    background-color: var(--background-color-one);
+}
+
+.retangulo {
+    display: flexbox;
+    width: 518px;
+    margin-top: 4em;
+    margin-bottom: 2em;
+    cursor: pointer;
+}
+
+.retangulo_caixa {
+    width: 518px;
+    height: 259px;
+}
+
+.retangulo__titulo {
+    color: var(--pink);
+    font-weight: 500;
+    font-size: 30px;
+    padding: 0.5em 0 0.5em 0;
+}
+
+.container3 {
+    display: flex;
+    justify-content:space-evenly;
+    background-color: var(--background-color-one);
+    padding-bottom: 5em;
+}
+
+@media only screen and (max-width: 480px) {
+
+    header{
+        display: none !important;
+    }
+    .imagem1 {
+        display: none;
+    }
+
+    .titulo {
+        width: 100vh;
+    }
+
+    .retangulo {
+        width: 100vw;
+
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+           
+    }
+
+    .container2, .container3{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer{
+        
+        width: 100vw;
+        position: absolute;
+        top: 0;
+        padding: 0;
+    }
+}

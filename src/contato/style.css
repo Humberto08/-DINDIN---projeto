@@ -1,0 +1,130 @@
+.conteiner{
+
+    padding: 5rem;
+    display: flex;
+    flex-direction: row;
+    
+    background-color: var(--background-color-one);
+
+    font-family: Nunito;
+}
+
+
+.section{
+    display: flex;
+    flex-direction: row;
+
+    padding: 1rem;
+    
+}
+
+.conteiner h1{
+    color: var(--pink);
+
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: Ubuntu;
+
+}
+
+.conteiner form{
+    padding-top: 2rem;
+    padding-right: 12rem;
+    padding-left: 2rem;
+}
+
+.conteiner form input{
+    width: 35vw;
+
+    padding: 0.5rem;
+
+    background: var(--white);
+    border: 1px solid #686868;
+    border-radius: 0.438rem;
+}
+
+#nome{
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+#mensagem{
+    padding-bottom: 10rem;
+    margin-top: 1rem;
+}
+
+.section button{
+    width: 6.75rem;
+    height: 2rem;
+
+    margin-top: 1rem;
+
+    background: var(--pink);
+    color: var(--white);
+    border: 1px solid var(--pink);
+    border-radius: 3.125rem;
+
+    font-size: 1rem;
+
+    cursor: pointer;
+}
+
+.section button:hover{
+    transition: 0.4s;
+    background-color: var(--background-color-one);
+    color: var(--pink);
+    
+}
+
+@media only screen and (max-width: 480px) {
+    header {
+      display: none !important;
+    }
+
+    .conteiner{
+        padding: 0;
+        margin: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+
+
+    .conteiner h1{
+
+        padding: 0;
+        
+    }
+
+    .conteiner form{
+        padding: 0;
+        height: 80vh;
+    }
+
+
+    .conteiner form input{
+        height: 5vh;
+        width: 80vw;
+    }
+
+    .conteiner form #mensagem{
+        text-align: center;
+        
+        height: 40vh;
+    }
+
+    .conteiner button{
+        margin: 0;
+        margin-top: 5rem;
+        width: 40vw;
+    }
+
+    .section img{
+        display: none;
+    }
+
+}

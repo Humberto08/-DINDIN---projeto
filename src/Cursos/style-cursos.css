@@ -1,0 +1,137 @@
+
+html, body {
+  background-color: var(--white);
+}
+
+.principal {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 5em 2em 4em 5.5em;
+  flex-direction: column;
+}
+
+.principal__titulo {
+  color: var(--pink);
+  font-weight: 700;
+  font-size: 60px;
+
+}
+
+.principal__subtitulo {
+  color: var(--text-color);
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 5em 2em 4em 7em;
+}
+
+.conteudo {
+  padding: 1em 2em 3em 4em;
+}
+
+.titulo__descricao {
+  color: var(--pink);
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.conteudo__descricao {
+  color: var(--black);
+  font-size: 18px;
+  font-weight: 300;
+  padding: 2em 3em 3em 0;
+}
+
+.container__botao {
+  background-color: var(--green);
+  color: var(--white);
+  font-size: 20px;
+  font-weight: 400;
+  border: solid var(--green);
+  border-radius: 62px;
+  padding: 10px 50px;
+
+  cursor: pointer;
+}
+
+.container__botao:hover{
+  transition: 0.3s;
+  background-color: var(--white);
+  color: var(--botao) ;
+}
+
+.imagem1 {
+  width: 380px;
+  height: 381px;
+}
+
+.imagem2 {
+  width: 380px;
+  height: 385px;
+}
+
+.imagem3 {
+  width: 380px;
+  height: 498px;
+}
+
+@media only screen and (max-width: 480px) {
+
+  header{
+    display: none !important;
+  }
+
+  .principal, .container {
+    margin: 1em;
+  }
+
+  .imagem1, .imagem2, .imagem3 {
+    width: 180px;
+    height: 90px;
+  }
+
+  .conteudo {
+    padding: .5em;
+  }
+
+  .principal__titulo {
+    color: var(--pink);
+    font-weight: 700;
+    font-size: 30px;
+    padding-bottom: 1rem;
+  }
+
+  .principal__subtitulo {
+      color: var(--text-color);
+      font-size: 12px;
+  }
+
+  .titulo__descricao {
+    color: var(--pink);
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+  .conteudo__descricao {
+    color: var(--black);
+    font-size: 12px;
+    font-weight: 300;
+    padding: 2em 3em 3em 0;
+  }
+
+    .container__botao {
+      background-color: var(--green);
+      color: var(--white);
+      font-size: 12px;
+      font-weight: 400;
+      border: solid var(--green);
+      border-radius: 62px;
+      padding: 5px 25px;
+  }
+
+
+}

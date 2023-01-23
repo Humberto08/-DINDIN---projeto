@@ -1,0 +1,309 @@
+.container {
+    padding: 4rem;
+
+    display: flex;
+    align-items: center;
+    text-align: left;
+    justify-content: space-evenly;
+
+    background-color: var(--background-color-one);
+
+    width: 99vw;
+    height: 100vh;
+}
+
+.container h1 {
+    font-size: 3.5rem;
+
+    color: var(--pink);
+
+    padding-top: 0;
+    padding-left: 9rem;
+    padding-right: 8rem;
+    padding-bottom: 1.5rem;
+}
+
+.container p {
+    font-size: 1.25rem;
+
+    padding-left: 9rem;
+    padding-right: 8rem;
+    padding-bottom: 1.5rem;
+}
+
+.img-3 {
+    display: flex;
+    align-items: left;
+
+    padding-right: 5rem;
+}
+
+
+#videos {
+
+    background-color: var(--background-color-two);
+
+    padding: 4.5rem 13rem;
+
+    display: flex;
+
+}
+
+.aula-1 p {
+    position: absolute;
+
+    width: 31.4rem;
+    height: 12.2rem;
+
+    left: 47rem;
+    top: 50rem;
+
+    padding-top: 100px;
+}
+
+
+.aula-1 h2 {
+    position: absolute;
+
+    width: 32rem;
+    height: 2.5rem;
+    left: 47rem;
+    top: 46rem;
+
+    font-size: 2.2rem;
+
+    color: var(--pink);
+
+    padding-top: 100px;
+
+}
+
+.aula-2 p {
+    position: absolute;
+
+    width: 501px;
+    height: 195px;
+
+    left: 750px;
+    top: 1212px;
+
+    padding-top: 100px;
+}
+
+.aula-2 h2 {
+    position: absolute;
+
+    width: 106px;
+    height: 40px;
+
+    left: 750px;
+    top: 1146px;
+
+    font-size: 2.2rem;
+
+    color: var(--pink);
+
+    padding-top: 100px;
+
+}
+
+.aula-3 p {
+    position: absolute;
+
+    width: 501px;
+    height: 195px;
+
+    left: 750px;
+    top: 1624px;
+
+    padding-top: 100px;
+
+}
+
+.aula-3 h2 {
+    position: absolute;
+
+    width: 512px;
+    height: 40px;
+
+    left: 750px;
+    top: 1558px;
+
+    font-size: 2.2rem;
+
+    color: var(--pink);
+
+    padding-top: 100px;
+}
+
+
+
+hr .aula-1 {
+    position: absolute;
+
+    width: 1244px;
+    height: 3px;
+    left: 98px;
+    top: 1068px;
+
+    background: var(--gray-line);
+}
+
+hr .aula-2 {
+    position: absolute;
+
+    width: 1244px;
+    height: 3px;
+    left: 98px;
+    top: 1480px;
+
+    background: var(--gray-line);
+}
+
+/*** Responsividade *********************************/
+/* 480px CELULARES */
+
+@media only screen and (max-width: 480px) {
+
+    header{
+        display: none !important;
+    }
+
+    #videos {
+        width: 10%;
+        padding: 0%;
+
+    }
+
+    #videos iframe {
+
+        padding-left: 35px;
+        margin-top: 50px;
+        width: 350px;
+        height: 200px;
+    }
+
+    #videos hr {
+        padding-left: 500px;
+    }
+
+    .initial{
+        display: flex;
+        align-items: center;
+    }
+
+    .container{
+        width: auto;
+        height: auto;
+        display: flex;
+        align-items: center;
+    }
+
+    .img-3 {
+        display: none;
+    }
+
+    .container p {
+        display: none;
+
+    }
+
+    .container h1 {
+        width:100vw;
+
+
+        font-size: 3rem;
+
+        padding: 0;
+        padding-left: 1rem;
+        margin: 0;
+
+    }
+
+    .container-2{
+        width: auto
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .container-2 .video{
+        width: 100vw;
+        height: 100vh;
+        padding: 0;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    
+    }
+
+    #videos iframe{
+        margin: 0;
+        padding: 0;
+
+    }
+}
+
+/* 1024px TABLETS 
+
+@media only screen and (max-width: 1024px) {
+    .container {
+        height: 50%;
+
+    }
+
+
+    #videos {
+        
+        padding: 0%;
+
+    }
+
+    #videos iframe {
+
+        padding-left: 60px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: px;
+        height: 180px;
+    }
+
+    #videos hr {
+        padding-left: 1000px;
+        
+    }
+
+    .img-3 {
+
+        padding-right: 450px;
+        margin-top: 200px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .container p {
+        display: none;
+        width: 100px;
+
+
+    }
+
+    .container h1 {
+
+        padding-left: 250px;
+
+        width: 200px;
+        height: 200px;
+
+        margin-bottom: 300px;
+
+        font-size: 3rem;
+    }
+
+    .aula-1 p, .aula-2 p, .aula-3 p, .aula-1 h2, .aula-2 h2, .aula-3 h2{
+        display: none;
+        
+    } 
+}**/

@@ -1,0 +1,30 @@
+:root {
+  --background-color-one: #E5E5E5;
+  --background-color-two: #F7F7F7;
+  --pink: #FF4081;
+  --black: #000;
+  --white: #FFF;
+  --fonte-principal: 'Ubuntu';
+  --text-color: #555555;
+  --green: #009688;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+html, body {
+    width: 100%;
+  
+    font-size: 1rem;
+    overflow-x: hidden;
+
+    font-family: 'Ubuntu';
+  }
+
+a {
+    text-decoration: none;
+  }
